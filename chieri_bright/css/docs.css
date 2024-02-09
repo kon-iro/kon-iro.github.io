@@ -1,0 +1,357 @@
+/* Docs sample */
+
+
+/*534px*/
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(../pics/bg.gif);
+    background-attachment: fixed;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+}
+
+.block-one {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.block-two {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.test {
+    width: 534px;
+    height: 750px;
+}
+
+.entry {
+    height: 100%;
+    padding: 1em;
+    border: 3px solid rgb(146, 208, 150);
+    border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+}
+
+.mtable {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.mtable tr {
+    height: 33%;
+}
+
+.mtable td {
+    width: 50%;
+}
+
+.img_radius {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    width: 140px;
+}
+
+.mli {
+    list-style-type: none;
+    text-align: center;
+}
+
+.mli1 {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+
+.mli2 {
+    list-style-type: none;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blue;
+}
+
+.box-title {
+    border: 2px solid rgb(146, 208, 150);
+    border-radius: 4px;
+    margin: 2em 0;
+    padding: 2em;
+    position: relative;
+}
+
+.box-title::before {
+    background-color: #FFF;
+    color: rgb(53, 186, 73);
+    content: "タイトル";
+    font-weight: bold;
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.box-title1 {
+    border: 2px solid rgb(146, 208, 150);
+    border-radius: 4px;
+    margin: 2em 0;
+    padding: 1.5em;
+    position: relative;
+}
+
+.box-title1::before {
+    background-color: #FFF;
+    color: rgb(53, 186, 73);
+    content: "発行日";
+    font-weight: bold;
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.box-title2 {
+    border: 2px solid rgb(146, 208, 150);
+    border-radius: 4px;
+    margin: 2em 0;
+    padding: 1.5em;
+    position: relative;
+}
+
+.box-title2::before {
+    background-color: #FFF;
+    color: rgb(53, 186, 73);
+    content: "頒布場所";
+    font-weight: bold;
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.box-title3 {
+    border: 2px solid rgb(146, 208, 150);
+    border-radius: 4px;
+    margin: 2em 0;
+    padding: 1em;
+    position: relative;
+}
+
+.box-title3::before {
+    background-color: #FFF;
+    color: rgb(53, 186, 73);
+    content: "頒布価格";
+    font-weight: bold;
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.box-title4 {
+    border: 2px solid rgb(146, 208, 150);
+    border-radius: 4px;
+    margin: 2em 0;
+    padding: 0.5em;
+    position: relative;
+}
+
+.tablesns td {
+    padding-top: 5px;
+}
+
+.toppage {
+    margin: 55px 20px 0px 20px;
+}
+
+#canvas {
+    width: 1068px;
+    height: 750px;
+    margin: 25px auto;
+}
+
+#book-zoom {
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+}
+
+.animated {
+    -webkit-transition: margin-left 0.2s ease-in-out;
+    -moz-transition: margin-left 0.2s ease-in-out;
+    -o-transition: margin-left 0.2s ease-in-out;
+    -ms-transition: margin-left 0.2s ease-in-out;
+    transition: margin-left 0.2s ease-in-out;
+}
+
+.docs {
+    margin-top: 20px;
+    width: 1068px;
+    height: 750px;
+}
+
+.docs .page {
+    width: 534px;
+    height: 750px;
+    background: white;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.docs .hard {
+    background-image: url(../pics/covers.png);
+}
+
+.docs .p2 {
+    background-position: -534px 0;
+}
+
+.docs .p28 {
+    background: -webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image: -webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image: -moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image: -ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image: -o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image: linear-gradient(left, #fff 95%, #dadada 100%);
+}
+
+.docs .p11 {
+    background-position: -1068px 0;
+}
+
+.docs .p12 {
+    background-position: -1602px 0;
+}
+
+.docs .even .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../pics/right-border.png);
+    background-position: right top;
+    background-repeat: repeat-y;
+}
+
+.docs .odd .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../pics/left-border.png);
+    background-position: left top;
+    background-repeat: repeat-y;
+}
+
+.docs .page-wrapper {
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    perspective: 2000px;
+}
+
+.docs .loader {
+    background-image: url(../pics/loader.gif);
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 280px;
+    left: 219px;
+}
+
+.docs .shadow {
+    -webkit-transition: -webkit-box-shadow 0.5s;
+    -moz-transition: -moz-box-shadow 0.5s;
+    -o-transition: -webkit-box-shadow 0.5s;
+    -ms-transition: -ms-box-shadow 0.5s;
+    -webkit-box-shadow: 0 0 20px #ccc;
+    -moz-box-shadow: 0 0 20px #ccc;
+    -o-box-shadow: 0 0 20px #ccc;
+    -ms-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.docs .tabs {
+    width: 1068px;
+    height: 22px;
+    top: -22px;
+    position: relative;
+    z-index: 1;
+}
+
+.docs .tabs > div {
+    width: 524px;
+    height: 22px;
+    float: left;
+}
+
+.docs .tabs .left {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.docs .tabs .right {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.docs .tabs a {
+    color: black;
+    -webkit-border-image: url(../pics/tab-off.png) 5 20 5 20 repeat stretch;
+    border-width: 5px 20px 5px 20px;
+    display: inline-block;
+    font: bold 11px arial;
+    text-shadow: 1px 1px 0 #ddd;
+    color: #333;
+    line-height: 12px;
+    text-decoration: none;
+}
+
+.docs .tabs .on,
+.docs .tabs .on:hover {
+    -webkit-border-image: url(../pics/tab-on.png) 5 20 5 20 repeat stretch;
+    cursor: default;
+}
+
+.docs .tabs a:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-border-image: url(../pics/tab-hover.png) 5 20 5 20 repeat stretch;
+}

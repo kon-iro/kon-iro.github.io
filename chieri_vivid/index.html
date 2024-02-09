@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>智絵里合同誌「Vivid Clover」 特設サイト</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-960px,height=540px">
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+    <script type="text/javascript" src="js/jquery.fadethis.min.js"></script>
+    <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+
+    <script>
+        $(document).ready(function () {
+            $(".main").onepage_scroll({
+                sectionContainer: "section",
+                loop: false,
+                responsiveFallback: false,
+                updateURL: false
+            });
+        });
+    </script>
+    <script>
+        $(window).fadeThis();
+    </script>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Nixie+One);
+        html {
+            height: 100%;
+        }
+        
+        body {
+            --display: none;
+            --background: #E2E4E7;
+            --padding: 0;
+            --text-align: center;
+            font-family: 'open sans';
+            --position: relative;
+            --margin: 0;
+            --height: 100%;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h1,
+        h2 {
+            width: 100%;
+            float: left;
+        }
+        
+        h1 {
+            margin-top: 100px;
+            color: #000;
+            margin-bottom: 5px;
+            font-size: 70px;
+            letter-spacing: -4px;
+            font-weight: 100;
+        }
+        
+        h1 span {
+            font-size: 26px;
+            margin: 0 5px;
+            text-transform: capitalize;
+            background: rgba(0, 0, 0, 0.85);
+            display: inline-block;
+            color: #6D461D;
+            border-radius: 5px 5px;
+            -webkit-border-radius: 5px 5px;
+            -moz-border-radius: 5px 5px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+            padding: 3px 10px;
+        }
+        
+        h2 {
+            color: #6D461D;
+            font-weight: 100;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .main section.page1 .page_container {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            --margin: 0 auto 0;
+            --max-width: 950px;
+            --z-index: 3;
+        }
+        
+        .main section {
+            overflow: hidden;
+        }
+        
+        .main section.page1 > img {
+            max-width: 100%;
+            min-width: 50%;
+            z-index: 1;
+        }
+        
+        .main section.page1 > img.logo {}
+        
+        .main section.page1 {
+            position: relative;
+            text-align: right;
+        }
+        
+        .main section.page1 h1 {
+            float: none;
+            max-width: 435px;
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 15px;
+            font-size: 44px;
+            color: black;
+        }
+        
+        .main section.page1 h2 {
+            font-size: 18px;
+            display: block;
+            color: rgba(0, 0, 0, 0.85);
+            text-align: center;
+            max-width: 435px;
+            width: 100%;
+            line-height: 160%;
+        }
+        
+        .main section.page3 > img {
+            height: 100vh;
+        }
+        
+        .main section.page2 .box {
+            text-align: center;
+            margin: 0 auto;
+            width: 1200px;
+            height: 600px;
+        }
+        
+        .main section.page2 {
+            background-image: url(./img/clover.png);
+            z-index: 1
+        }
+        
+        .main section.page2 .page_container {
+            overflow: hidden;
+            --width: 1200px;
+            --padding: 20px;
+            --background: #fff;
+            --box-shadow: 0 0 50px #add8e6 inset, 5px 5px 0 #cecece;
+            ---moz-box-shadow: 0 0 50px #add8e6 inset, 5px 5px 0 #cecece;
+            ---webkit-box-shadow: 0 0 50px #add8e6 inset;
+        }
+        
+        .main section.page3 .page_container {
+            position: absolute;
+            --width: 120px;
+            --height: 160px;
+            left: 45%;
+            top: 25%;
+            --margin-left: -60px;
+            --margin-top: -80px;
+        }
+        
+        .main section.page3 h1 {
+            text-align: left;
+            padding: 0;
+            margin-bottom: 0;
+            font-size: 70px;
+            letter-spacing: -1px;
+            color: black;
+        }
+        
+        .main section.page3 h2 {
+            color: rgba(0, 0, 0, 0.85);
+            text-align: left;
+            line-height: 160%;
+            font-weight: 100;
+            font-size: 21px;
+        }
+        
+        section figure {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            background: #000;
+        }
+        
+        .fig {
+            color: #fff;
+            float: left;
+        }
+        
+        .fig figure:after {
+            position: absolute;
+            background: #fff;
+            content: "";
+            display: block;
+            width: 90%;
+            height: 1px;
+            left: 5%;
+            top: 50%;
+            transform: scale(0);
+            transition: all .5s ease-out;
+        }
+        
+        .fig figure:hover:after {
+            transform: scale(1);
+        }
+        
+        .fig figcaption p,
+        .fig figcaption h3 {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            opacity: 0;
+            transition: all .4s ease-out .4s;
+        }
+        
+        .fig figcaption h3 {
+            bottom: 45%;
+            transform: translateY(-10px);
+        }
+        
+        .fig figcaption p {
+            top: 45%;
+            transform: translateY(10px);
+        }
+        
+        .fig figure:hover figcaption p,
+        .fig figure:hover figcaption h3 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .fig figure img {
+            transition: all 1.2s ease-out;
+        }
+        
+        .fig figure:hover img {
+            opacity: .5;
+            transform: scale(1.2);
+        }
+        
+        .fig figure:hover img.btn {
+            opacity: 1;
+        }
+        
+        .block {
+            width: 400px;
+            text-align: center;
+            color: #000;
+            background: #77d65a;
+            padding: 20px;
+            border: 1px dashed rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 0 5px #77d65a;
+            -moz-box-shadow: 0 0 0 5px #77d65a;
+            -webkit-box-shadow: 0 0 0 5px #77d65a;
+        }
+        
+        .ribbon {
+            font-family: 'Nixie One', cursive;
+            font-size: 20px;
+            width: 20%;
+            position: relative;
+            background: rgb(114, 216, 157);
+            --color: #fff;
+            text-align: center;
+            padding: 0.5em 2em;
+            /* Adjust to suit */
+            margin: 0.5em auto 1.5em;
+            /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+        }
+        
+        .ribbon:before,
+        .ribbon:after {
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: -1em;
+            border: 1em solid #7AC69F;
+            z-index: -1;
+        }
+        
+        .ribbon:before {
+            left: -1.5em;
+            border-right-width: 1.5em;
+            border-left-color: transparent;
+        }
+        
+        .ribbon:after {
+            right: -1.5em;
+            border-left-width: 1.5em;
+            border-right-color: transparent;
+        }
+        
+        .ribbon-content:before,
+        .ribbon-content:after {
+            content: "";
+            position: absolute;
+            display: block;
+            border-style: solid;
+            border-color: #65b78b transparent transparent transparent;
+            bottom: -1em;
+        }
+        
+        .ribbon-content:before {
+            left: 0;
+            border-width: 1em 0 0 1em;
+        }
+        
+        .ribbon-content:after {
+            right: 0;
+            border-width: 1em 1em 0 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <section class="page1">
+
+            <div class="page_container slide-left">
+
+                <img class="logo" src="img/logo.png">
+
+            </div>
+            <img src="img/bg1.jpg">
+        </section>
+
+        <section class="page2">
+            <div class="page_container">
+
+
+
+                <div class="ribbon">
+                    <span class="ribbon-content">参加者</span>
+                </div>
+
+                <div class="box">
+
+
+                    <div class="fig">
+                        <figure>
+                            <img src="img/icon/icon01.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">ゆりゅ</h3>
+                                <p>
+                                    <a href="https://twitter.com/yuyuryu1" target="_blank"><img class="btn" src="img/twitter.png"></a>
+                                    &nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=178791" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon09.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">すいみゃ</h3>
+                                <p>
+                                    <a href="https://twitter.com/suimya" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=25386" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon17.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">まと</h3>
+                                <p>
+                                    <a href="https://twitter.com/kh_van" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=2064642" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon25.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">コウイチ</h3>
+                                <p>
+                                    <a href="https://twitter.com/cain45" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=2359378" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="fig">
+                        <figure>
+                            <img src="img/icon/icon02.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">汐</h3>
+                                <p>
+                                    <a href="https://twitter.com/CIRuLH" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=3747291" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon10.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">酢豚</h3>
+                                <p>
+
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon18.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">まるちぇ</h3>
+                                <p>
+                                    <a href="https://twitter.com/marutye51" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=304521" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon26.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">ささみ</h3>
+                                <p>
+                                    <a href="https://twitter.com/sasamiiiiiiii" target="_blank"><img class="btn" src="img/twitter.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="fig">
+                        <figure>
+                            <img src="img/icon/icon03.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">逢口ちあき</h3>
+                                <p>
+                                    <a href="https://twitter.com/chia__9" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=6667794" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon11.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">ちあこ</h3>
+                                <p>
+                                    <a href="https://twitter.com/chia_ko" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=1025317" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon19.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">弥生春輝</h3>
+                                <p>
+                                    <a href="https://twitter.com/yayoiharuki" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=1518125" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon27.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">ざゆう</h3>
+                                <p>
+                                    <a href="https://twitter.com/_zayuu" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=1922588" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="fig">
+                        <figure>
+                            <img src="img/icon/icon04.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">ECHOTARO</h3>
+                                <p>
+                                    <a href="https://twitter.com/ECTR_PLANET" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=1428237" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon12.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">直晴</h3>
+                                <p>
+                                    <a href="https://twitter.com/nao_reb" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=103836" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon20.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">ゆらた</h3>
+                                <p>
+                                    <a href="https://twitter.com/suyarinko" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=149987" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon28.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">みなみ</h3>
+                                <p>
+                                    <a href="https://twitter.com/minamin33" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=5522415" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="fig">
+                        <figure>
+                            <img src="img/icon/icon05.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">きゃらこん</h3>
+                                <p>
+                                    <a href="https://twitter.com/concon777" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=6326903" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon13.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">ぬらお</h3>
+                                <p>
+                                    <a href="https://twitter.com/nurarararara" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=429879" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon21.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">飴沢狛</h3>
+                                <p>
+                                    <a href="https://twitter.com/ponnzuame" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=1203575" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon29.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">みゆあら</h3>
+                                <p>
+                                    <a href="https://twitter.com/chimuaramen" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=7521967" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="fig">
+                        <figure>
+                            <img src="img/icon/icon06.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">佐伯ソラ</h3>
+                                <p>
+                                    <a href="https://twitter.com/sae_sky77" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=4238462" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon14.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">ぱお先輩</h3>
+                                <p>
+                                    <a href="https://twitter.com/pao__lily" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=92955" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon22.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">雨坂はる</h3>
+                                <p>
+                                    <a href="https://twitter.com/haru_mas" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=48924" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon30.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">三好紗南は世界の約束</h3>
+                                <p>
+                                    <a href="https://twitter.com/34437kawaii" target="_blank"><img class="btn" src="img/twitter.png"></a>
+
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="fig">
+                        <figure>
+                            <img src="img/icon/icon07.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">梓月綾</h3>
+                                <p>
+                                    <a href="https://twitter.com/shidukitei_aya" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=252889" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon15.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">ひびき透</h3>
+                                <p>
+                                    <a href="https://twitter.com/curehibiki7" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=6987804" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon23.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">綾瀬</h3>
+                                <p>
+                                    <a href="https://twitter.com/ayase_aria" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=342919" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon31.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">悠木玲二</h3>
+                                <p>
+                                    <a href="https://twitter.com/rage0122" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=474002" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="fig">
+                        <figure>
+                            <img src="img/icon/icon08.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">しずし</h3>
+                                <p>
+                                    <a href="https://twitter.com/4z4z" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=688119" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon16.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">へむ</h3>
+                                <p>
+                                    <a href="https://twitter.com/obi_nata" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=1057303" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon24.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">おおやまちろる</h3>
+                                <p>
+                                    <a href="https://twitter.com/mirai_chiroru" target="_blank"><img class="btn" src="img/twitter.png"></a>&nbsp;&nbsp;
+                                    <a href="http://www.pixiv.net/member.php?id=309247" target="_blank"><img class="btn" src="img/pixiv.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/icon/icon32.png" width="150" height="150">
+                            <figcaption>
+                                <h3 class="title">企画:ディアス&nbsp;<a href="https://twitter.com/diazimas" target="_blank"><img class="btn" src="img/twitter.png"></a></h3>
+                                <p>
+                                    編集:あいる&nbsp;
+                                    <a href="https://twitter.com/_aill" target="_blank"><img class="btn" src="img/twitter.png"></a>
+                                    <br/> Web:こんいろ&nbsp;
+                                    <a href="https://twitter.com/kon_iro" target="_blank"><img class="btn" src="img/twitter.png"></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page3">
+            <div class="page_container">
+
+                <div class="block">
+                    <p>
+                        &nbsp;
+                    </p>
+                    <p>・タイトル・</br>
+                        Vivid Clover</p>
+                    <p>・発行日・</br>
+                        2016年5月29日(日)</br>CuteStarFestiv@l
+                        </br>緒方智絵里オンリー Clover Fields</p>
+                    <p>・頒布場所・</br>
+                        A-4 「Clover Heart's」</br>
+                        <a href="http://twipla.jp/events/189661" target="_brank">twipla</a>
+                    </p>
+                    <p>・頒布価格・</br>
+                        1500円</p>
+
+                    <p>
+                        &nbsp;
+                    </p>
+                </div>
+
+
+            </div>
+
+            <img src="img/bg3.png">
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
